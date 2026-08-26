@@ -1,0 +1,23 @@
+Sun Aug 23 14:28:57 +0300 2026
+Trace back: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+    while executing
+"::.main_pane.dataflow.interior.cs.body.pw.df.c RegenerateLayout -placement"
+    ("after" script)
+  <2:C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"}
+  <1:eval:1: ::tk::dialog::error::bgerror {invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"}
+Sun Aug 23 14:28:59 +0300 2026
+Trace back: can't read "vsimPriv(.main_pane.dataflow.interior.cs.body.pw.wf.top:grid)": no such element in array
+    while executing
+"set grid $vsimPriv($winname:grid)"
+    (procedure "Wave::UpdateValueButtons" line 6)
+    invoked from within
+"Wave::UpdateValueButtons $winname $cursor_num $cursor_time $cursor_delta"
+    (procedure "Wave::PositionCursor" line 12)
+    invoked from within
+"Wave::PositionCursor $winname 0 $Now $vsimPriv(Iteration)"
+    (procedure "Wave::UpdateEndOfTimeCursor" line 6)
+    invoked from within
+"Wave::UpdateEndOfTimeCursor .main_pane.dataflow.interior.cs.body.pw.wf.top"
+    ("after" script)
+  <2:C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {can't read "vsimPriv(.main_pane.dataflow.interior.cs.body.pw.wf.top:grid)": no such element in array}
+  <1:eval:1: ::tk::dialog::error::bgerror {can't read "vsimPriv(.main_pane.dataflow.interior.cs.body.pw.wf.top:grid)": no such element in array}

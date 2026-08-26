@@ -1,0 +1,12 @@
+
+State Machine - |Compression|rmii_rx:rx_from_b|st
+Name st.S_IDLE st.S_RX st.S_SFD 
+st.S_IDLE 0 0 0 
+st.S_SFD 1 0 1 
+st.S_RX 1 1 0 
+
+State Machine - |Compression|rmii_rx:rx_from_a|st
+Name st.S_IDLE st.S_RX st.S_SFD 
+st.S_IDLE 0 0 0 
+st.S_SFD 1 0 1 
+st.S_RX 1 1 0 

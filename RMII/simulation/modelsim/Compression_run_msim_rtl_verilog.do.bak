@@ -1,0 +1,11 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/noone/OneDrive/Desktop/comp {C:/Users/noone/OneDrive/Desktop/comp/rmii_rx.v}
+vlog -vlog01compat -work work +incdir+C:/Users/noone/OneDrive/Desktop/comp {C:/Users/noone/OneDrive/Desktop/comp/rmii_tx.v}
+vlog -vlog01compat -work work +incdir+C:/Users/noone/OneDrive/Desktop/comp {C:/Users/noone/OneDrive/Desktop/comp/Compression.v}
+

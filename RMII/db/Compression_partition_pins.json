@@ -1,0 +1,65 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "phya_tx_en",
+					"strict" : false
+				},
+				{
+					"name" : "phya_txd[0]",
+					"strict" : false
+				},
+				{
+					"name" : "phya_txd[1]",
+					"strict" : false
+				},
+				{
+					"name" : "phyb_tx_en",
+					"strict" : false
+				},
+				{
+					"name" : "phyb_txd[0]",
+					"strict" : false
+				},
+				{
+					"name" : "phyb_txd[1]",
+					"strict" : false
+				},
+				{
+					"name" : "phyb_rx_crs_dv",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "phya_rx_crs_dv",
+					"strict" : false
+				},
+				{
+					"name" : "phyb_rxd[0]",
+					"strict" : false
+				},
+				{
+					"name" : "phyb_rxd[1]",
+					"strict" : false
+				},
+				{
+					"name" : "phya_rxd[0]",
+					"strict" : false
+				},
+				{
+					"name" : "phya_rxd[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
