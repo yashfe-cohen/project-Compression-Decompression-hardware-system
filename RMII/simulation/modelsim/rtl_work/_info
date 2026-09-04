@@ -7,48 +7,70 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/noone/OneDrive/Desktop/comp/simulation/modelsim
+Z0 dC:/Users/noone/OneDrive/Desktop/Compression project/RMII/simulation/modelsim
 vCompression
-Z1 !s110 1787724968
+Z1 !s110 1788512593
 !i10b 1
-!s100 KY1H6zGEMMHzROe^OU<h73
-Im8V4??=F?BN4`PVl>d5KS3
+!s100 EHoEE79;@8P2n5m0VEoYb0
+IRm?omJd4GAX4VLihQh`fR0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1787483383
-8C:/Users/noone/OneDrive/Desktop/comp/Compression.v
-FC:/Users/noone/OneDrive/Desktop/comp/Compression.v
+w1788096537
+8C:/Users/noone/OneDrive/Desktop/Compression project/RMII/Compression.v
+FC:/Users/noone/OneDrive/Desktop/Compression project/RMII/Compression.v
 L0 1
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1787724968.000000
-!s107 C:/Users/noone/OneDrive/Desktop/comp/Compression.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/noone/OneDrive/Desktop/comp|C:/Users/noone/OneDrive/Desktop/comp/Compression.v|
+Z4 !s108 1788512593.000000
+!s107 C:/Users/noone/OneDrive/Desktop/Compression project/RMII/Compression.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/noone/OneDrive/Desktop/Compression project/RMII|C:/Users/noone/OneDrive/Desktop/Compression project/RMII/Compression.v|
 !i113 1
 Z5 o-vlog01compat -work work
-Z6 !s92 -vlog01compat -work work +incdir+C:/Users/noone/OneDrive/Desktop/comp
+Z6 !s92 -vlog01compat -work work {+incdir+C:/Users/noone/OneDrive/Desktop/Compression project/RMII}
 Z7 tCvgOpt 0
 n@compression
+vCompression_vlg_tst
+!s110 1788512735
+!i10b 1
+!s100 Obl6<906ce_ZoBoZBkCTa3
+I=W^g>Wal5GTBLa5OR1T8;3
+R2
+R0
+w1788098872
+8C:/Users/noone/OneDrive/Desktop/Compression project/RMII/Compression_vlg_tst.v
+FC:/Users/noone/OneDrive/Desktop/Compression project/RMII/Compression_vlg_tst.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1788512735.000000
+!s107 C:/Users/noone/OneDrive/Desktop/Compression project/RMII/Compression_vlg_tst.v|
+!s90 -reportprogress|300|-work|work|C:/Users/noone/OneDrive/Desktop/Compression project/RMII/Compression_vlg_tst.v|
+!i113 1
+o-work work
+R7
+n@compression_vlg_tst
 vrmii_rx
 R1
 !i10b 1
-!s100 T?JbCfYl^JG?AN32`iLS?0
-IE@oCU8ZSaogG@RhZ5WZM=1
+!s100 e_87RRZc5Bh=>m?>?LNkG3
+IZ:k>^IVLK9AadM@mGP<8^0
 R2
 R0
-w1787483382
-8C:/Users/noone/OneDrive/Desktop/comp/rmii_rx.v
-FC:/Users/noone/OneDrive/Desktop/comp/rmii_rx.v
+w1788512422
+8C:/Users/noone/OneDrive/Desktop/Compression project/RMII/rmii_rx.v
+FC:/Users/noone/OneDrive/Desktop/Compression project/RMII/rmii_rx.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/noone/OneDrive/Desktop/comp/rmii_rx.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/noone/OneDrive/Desktop/comp|C:/Users/noone/OneDrive/Desktop/comp/rmii_rx.v|
+!s107 C:/Users/noone/OneDrive/Desktop/Compression project/RMII/rmii_rx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/noone/OneDrive/Desktop/Compression project/RMII|C:/Users/noone/OneDrive/Desktop/Compression project/RMII/rmii_rx.v|
 !i113 1
 R5
 R6
@@ -56,43 +78,22 @@ R7
 vrmii_tx
 R1
 !i10b 1
-!s100 Cgh`K85?K1_?S6@]jfO5[1
-Ie^J?OBP8Rz7hkX^iNdMXg0
+!s100 m]?We9J^o`leU[YDlIXWj3
+I8JNN>lb@c6V^Q[;:@gLeY3
 R2
 R0
-w1787482925
-8C:/Users/noone/OneDrive/Desktop/comp/rmii_tx.v
-FC:/Users/noone/OneDrive/Desktop/comp/rmii_tx.v
+w1788096538
+8C:/Users/noone/OneDrive/Desktop/Compression project/RMII/rmii_tx.v
+FC:/Users/noone/OneDrive/Desktop/Compression project/RMII/rmii_tx.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/noone/OneDrive/Desktop/comp/rmii_tx.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/noone/OneDrive/Desktop/comp|C:/Users/noone/OneDrive/Desktop/comp/rmii_tx.v|
+!s107 C:/Users/noone/OneDrive/Desktop/Compression project/RMII/rmii_tx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/noone/OneDrive/Desktop/Compression project/RMII|C:/Users/noone/OneDrive/Desktop/Compression project/RMII/rmii_tx.v|
 !i113 1
 R5
 R6
-R7
-vtb_compression
-!s110 1787724994
-!i10b 1
-!s100 YPdDUYbJA=z37Y[F8bl9b0
-IlNIS`L73gYH[59HD=8@j`3
-R2
-R0
-w1787724920
-8C:/Users/noone/OneDrive/Desktop/comp/tb.v
-FC:/Users/noone/OneDrive/Desktop/comp/tb.v
-L0 3
-R3
-r1
-!s85 0
-31
-!s108 1787724994.000000
-!s107 C:/Users/noone/OneDrive/Desktop/comp/tb.v|
-!s90 -reportprogress|300|-work|work|C:/Users/noone/OneDrive/Desktop/comp/tb.v|
-!i113 1
-o-work work
 R7

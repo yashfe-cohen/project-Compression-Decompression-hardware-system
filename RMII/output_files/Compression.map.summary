@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Wed Aug 26 09:45:48 2026
+Analysis & Synthesis Status : Successful - Fri Sep 04 12:00:36 2026
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 Revision Name : Compression
 Top-level Entity Name : Compression
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 64
+Total registers : 16
 Total pins : 14
 Total virtual pins : 0
 Total block memory bits : 0

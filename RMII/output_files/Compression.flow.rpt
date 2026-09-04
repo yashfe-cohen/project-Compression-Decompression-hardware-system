@@ -1,5 +1,5 @@
 Flow report for Compression
-Wed Aug 26 09:45:49 2026
+Fri Sep 04 12:00:36 2026
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Aug 26 09:45:48 2026       ;
+; Flow Status                     ; Successful - Fri Sep 04 12:00:36 2026       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; Compression                                 ;
 ; Top-level Entity Name           ; Compression                                 ;
@@ -49,7 +49,7 @@ agreement for further details.
 ; Device                          ; 5CGXFC7C7F23C8                              ;
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 64                                          ;
+; Total registers                 ; 16                                          ;
 ; Total pins                      ; 14                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/26/2026 09:45:39 ;
+; Start date & time ; 09/04/2026 12:00:26 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Compression         ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 193912844003662.178772673909476        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 193912844003662.178851242611564        ; --            ; --          ; --             ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_compression                         ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
@@ -101,8 +101,8 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4826 MB             ; 00:00:22                           ;
-; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:22                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4832 MB             ; 00:00:23                           ;
+; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:23                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

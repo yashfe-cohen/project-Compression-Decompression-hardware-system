@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Compression
-Wed Aug 26 09:45:49 2026
+Fri Sep 04 12:00:36 2026
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -13,13 +13,11 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |Compression|rmii_rx:rx_from_b|st
-  9. State Machine - |Compression|rmii_rx:rx_from_a|st
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -46,13 +44,13 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Aug 26 09:45:48 2026       ;
+; Analysis & Synthesis Status     ; Successful - Fri Sep 04 12:00:36 2026       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; Compression                                 ;
 ; Top-level Entity Name           ; Compression                                 ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 64                                          ;
+; Total registers                 ; 16                                          ;
 ; Total pins                      ; 14                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -170,15 +168,15 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                     ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                       ; Library ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------+---------+
-; rmii_tx.v                        ; yes             ; User Verilog HDL File  ; C:/Users/noone/OneDrive/Desktop/comp/rmii_tx.v     ;         ;
-; rmii_rx.v                        ; yes             ; User Verilog HDL File  ; C:/Users/noone/OneDrive/Desktop/comp/rmii_rx.v     ;         ;
-; Compression.v                    ; yes             ; User Verilog HDL File  ; C:/Users/noone/OneDrive/Desktop/comp/Compression.v ;         ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                           ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------+---------+
+; rmii_tx.v                        ; yes             ; User Verilog HDL File  ; C:/Users/noone/OneDrive/Desktop/Compression project/RMII/rmii_tx.v     ;         ;
+; rmii_rx.v                        ; yes             ; User Verilog HDL File  ; C:/Users/noone/OneDrive/Desktop/Compression project/RMII/rmii_rx.v     ;         ;
+; Compression.v                    ; yes             ; User Verilog HDL File  ; C:/Users/noone/OneDrive/Desktop/Compression project/RMII/Compression.v ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -186,25 +184,25 @@ agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 35        ;
+; Estimate of Logic utilization (ALMs needed) ; 9         ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 42        ;
+; Combinational ALUT usage for logic          ; 12        ;
 ;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 10        ;
-;     -- 5 input functions                    ; 8         ;
-;     -- 4 input functions                    ; 12        ;
-;     -- <=3 input functions                  ; 12        ;
+;     -- 6 input functions                    ; 0         ;
+;     -- 5 input functions                    ; 0         ;
+;     -- 4 input functions                    ; 4         ;
+;     -- <=3 input functions                  ; 8         ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 64        ;
+; Dedicated logic registers                   ; 16        ;
 ;                                             ;           ;
 ; I/O pins                                    ; 14        ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 64        ;
-; Total fan-out                               ; 432       ;
-; Average fan-out                             ; 3.22      ;
+; Maximum fan-out                             ; 16        ;
+; Total fan-out                               ; 106       ;
+; Average fan-out                             ; 1.89      ;
 +---------------------------------------------+-----------+
 
 
@@ -213,37 +211,13 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name            ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+-------------+--------------+
-; |Compression               ; 42 (0)              ; 64 (0)                    ; 0                 ; 0          ; 14   ; 0            ; |Compression                   ; Compression ; work         ;
-;    |rmii_rx:rx_from_a|     ; 11 (11)             ; 22 (22)                   ; 0                 ; 0          ; 0    ; 0            ; |Compression|rmii_rx:rx_from_a ; rmii_rx     ; work         ;
-;    |rmii_rx:rx_from_b|     ; 11 (11)             ; 22 (22)                   ; 0                 ; 0          ; 0    ; 0            ; |Compression|rmii_rx:rx_from_b ; rmii_rx     ; work         ;
-;    |rmii_tx:tx_to_a|       ; 10 (10)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Compression|rmii_tx:tx_to_a   ; rmii_tx     ; work         ;
-;    |rmii_tx:tx_to_b|       ; 10 (10)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Compression|rmii_tx:tx_to_b   ; rmii_tx     ; work         ;
+; |Compression               ; 12 (0)              ; 16 (0)                    ; 0                 ; 0          ; 14   ; 0            ; |Compression                   ; Compression ; work         ;
+;    |rmii_rx:rx_from_a|     ; 4 (4)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |Compression|rmii_rx:rx_from_a ; rmii_rx     ; work         ;
+;    |rmii_rx:rx_from_b|     ; 4 (4)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |Compression|rmii_rx:rx_from_b ; rmii_rx     ; work         ;
+;    |rmii_tx:tx_to_a|       ; 2 (2)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |Compression|rmii_tx:tx_to_a   ; rmii_tx     ; work         ;
+;    |rmii_tx:tx_to_b|       ; 2 (2)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |Compression|rmii_tx:tx_to_b   ; rmii_tx     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-Encoding Type:  One-Hot
-+---------------------------------------------------+
-; State Machine - |Compression|rmii_rx:rx_from_b|st ;
-+-----------+-----------+---------+-----------------+
-; Name      ; st.S_IDLE ; st.S_RX ; st.S_SFD        ;
-+-----------+-----------+---------+-----------------+
-; st.S_IDLE ; 0         ; 0       ; 0               ;
-; st.S_SFD  ; 1         ; 0       ; 1               ;
-; st.S_RX   ; 1         ; 1       ; 0               ;
-+-----------+-----------+---------+-----------------+
-
-
-Encoding Type:  One-Hot
-+---------------------------------------------------+
-; State Machine - |Compression|rmii_rx:rx_from_a|st ;
-+-----------+-----------+---------+-----------------+
-; Name      ; st.S_IDLE ; st.S_RX ; st.S_SFD        ;
-+-----------+-----------+---------+-----------------+
-; st.S_IDLE ; 0         ; 0       ; 0               ;
-; st.S_SFD  ; 1         ; 0       ; 1               ;
-; st.S_RX   ; 1         ; 1       ; 0               ;
-+-----------+-----------+---------+-----------------+
 
 
 +------------------------------------------------------+
@@ -251,30 +225,24 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 64    ;
+; Total registers                              ; 16    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 64    ;
+; Number of registers using Asynchronous Clear ; 16    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 40    ;
+; Number of registers using Clock Enable       ; 4     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output               ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Compression|rmii_tx:tx_to_a|shreg[6]    ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Compression|rmii_tx:tx_to_a|shreg[5]    ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Compression|rmii_tx:tx_to_b|shreg[6]    ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Compression|rmii_tx:tx_to_b|shreg[2]    ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |Compression|rmii_tx:tx_to_a|txd[0]      ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |Compression|rmii_tx:tx_to_b|txd[0]      ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; No         ; |Compression|rmii_rx:rx_from_b|Selector4 ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; No         ; |Compression|rmii_rx:rx_from_a|Selector4 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Compression|rmii_rx:rx_from_b|dout[0] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Compression|rmii_rx:rx_from_a|dout[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -282,20 +250,18 @@ Encoding Type:  One-Hot
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 64                          ;
-;     CLR               ; 24                          ;
-;     ENA CLR           ; 40                          ;
-; arriav_lcell_comb     ; 42                          ;
-;     normal            ; 42                          ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 8                           ;
-;         4 data inputs ; 12                          ;
-;         5 data inputs ; 8                           ;
-;         6 data inputs ; 10                          ;
+; arriav_ff             ; 16                          ;
+;     CLR               ; 12                          ;
+;     ENA CLR           ; 4                           ;
+; arriav_lcell_comb     ; 12                          ;
+;     normal            ; 12                          ;
+;         2 data inputs ; 6                           ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 4                           ;
 ; boundary_port         ; 14                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.12                        ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 0.72                        ;
 +-----------------------+-----------------------------+
 
 
@@ -314,32 +280,32 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Aug 26 09:45:38 2026
+    Info: Processing started: Fri Sep 04 12:00:25 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Compression -c Compression
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file tb.v
-    Info (12023): Found entity 1: tb_compression File: C:/Users/noone/OneDrive/Desktop/comp/tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file compression_vlg_tst.v
+    Info (12023): Found entity 1: Compression_vlg_tst File: C:/Users/noone/OneDrive/Desktop/Compression project/RMII/Compression_vlg_tst.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file rmii_tx.v
-    Info (12023): Found entity 1: rmii_tx File: C:/Users/noone/OneDrive/Desktop/comp/rmii_tx.v Line: 1
+    Info (12023): Found entity 1: rmii_tx File: C:/Users/noone/OneDrive/Desktop/Compression project/RMII/rmii_tx.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rmii_rx.v
-    Info (12023): Found entity 1: rmii_rx File: C:/Users/noone/OneDrive/Desktop/comp/rmii_rx.v Line: 1
+    Info (12023): Found entity 1: rmii_rx File: C:/Users/noone/OneDrive/Desktop/Compression project/RMII/rmii_rx.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file compression.v
-    Info (12023): Found entity 1: Compression File: C:/Users/noone/OneDrive/Desktop/comp/Compression.v Line: 1
+    Info (12023): Found entity 1: Compression File: C:/Users/noone/OneDrive/Desktop/Compression project/RMII/Compression.v Line: 1
 Info (12127): Elaborating entity "Compression" for the top level hierarchy
-Info (12128): Elaborating entity "rmii_rx" for hierarchy "rmii_rx:rx_from_a" File: C:/Users/noone/OneDrive/Desktop/comp/Compression.v Line: 35
-Info (12128): Elaborating entity "rmii_tx" for hierarchy "rmii_tx:tx_to_b" File: C:/Users/noone/OneDrive/Desktop/comp/Compression.v Line: 45
+Info (12128): Elaborating entity "rmii_rx" for hierarchy "rmii_rx:rx_from_a" File: C:/Users/noone/OneDrive/Desktop/Compression project/RMII/Compression.v Line: 32
+Info (12128): Elaborating entity "rmii_tx" for hierarchy "rmii_tx:tx_to_b" File: C:/Users/noone/OneDrive/Desktop/Compression project/RMII/Compression.v Line: 41
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 92 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 32 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
     Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 78 logic cells
+    Info (21061): Implemented 18 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4826 megabytes
-    Info: Processing ended: Wed Aug 26 09:45:49 2026
+    Info: Peak virtual memory: 4832 megabytes
+    Info: Processing ended: Fri Sep 04 12:00:36 2026
     Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Total CPU time (on all processors): 00:00:24
 
 

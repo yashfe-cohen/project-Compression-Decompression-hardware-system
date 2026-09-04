@@ -1,0 +1,49 @@
+module rmii_rx (
+    input            clk,      
+    input            rst_n,    
+    input            crs_dv,   
+    input      [1:0] rxd,      // data in 
+    output reg [1:0] dout,     // output data 2 bit
+    output reg       valid,    // high when dout is valid 
+    output reg       end_pkt   // Clean pulse to TX when packet truly ends
+);
+
+    reg [1:0] crs_dv_shift;    // shift register to track crs_dv history
+    reg       rx_active;       // 1 means receiving data
+
+    always @(posedge clk or negedge rst_n) begin
+        if (rst_n == 1'b0) begin
+            dout         <= 2'd0;
+            valid        <= 1'b0;
+            end_pkt      <= 1'b0;
+            crs_dv_shift <= 2'b00;
+            rx_active    <= 1'b0;
+        end else begin
+            crs_dv_shift <= {crs_dv_shift[0], crs_dv};
+            
+            valid   <= 1'b0; // Default
+            end_pkt <= 1'b0; // Default
+
+            if (rx_active == 1'b1) begin
+                
+                if (crs_dv_shift == 2'b00) begin
+                    rx_active <= 1'b0;
+                    end_pkt   <= 1'b1;
+                end 
+                
+               
+                else begin
+                    dout  <= rxd;   
+                    valid <= 1'b1; 
+                end
+                
+            end 
+            
+            else begin
+                if (crs_dv_shift[0] == 1'b1 && rxd == 2'b11) begin
+                    rx_active <= 1'b1;
+                end
+            end
+        end
+    end
+endmodule

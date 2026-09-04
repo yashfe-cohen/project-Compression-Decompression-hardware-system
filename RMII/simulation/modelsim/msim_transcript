@@ -10,73 +10,72 @@
 # Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/noone/OneDrive/Desktop/comp {C:/Users/noone/OneDrive/Desktop/comp/rmii_tx.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/noone/OneDrive/Desktop/Compression\ project/RMII {C:/Users/noone/OneDrive/Desktop/Compression project/RMII/rmii_tx.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:16:08 on Aug 26,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/noone/OneDrive/Desktop/comp" C:/Users/noone/OneDrive/Desktop/comp/rmii_tx.v 
+# Start time: 12:03:13 on Sep 04,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/noone/OneDrive/Desktop/Compression project/RMII" C:/Users/noone/OneDrive/Desktop/Compression project/RMII/rmii_tx.v 
 # -- Compiling module rmii_tx
 # 
 # Top level modules:
 # 	rmii_tx
-# End time: 09:16:08 on Aug 26,2026, Elapsed time: 0:00:00
+# End time: 12:03:13 on Sep 04,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/noone/OneDrive/Desktop/comp {C:/Users/noone/OneDrive/Desktop/comp/rmii_rx.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/noone/OneDrive/Desktop/Compression\ project/RMII {C:/Users/noone/OneDrive/Desktop/Compression project/RMII/rmii_rx.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:16:08 on Aug 26,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/noone/OneDrive/Desktop/comp" C:/Users/noone/OneDrive/Desktop/comp/rmii_rx.v 
+# Start time: 12:03:13 on Sep 04,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/noone/OneDrive/Desktop/Compression project/RMII" C:/Users/noone/OneDrive/Desktop/Compression project/RMII/rmii_rx.v 
 # -- Compiling module rmii_rx
 # 
 # Top level modules:
 # 	rmii_rx
-# End time: 09:16:08 on Aug 26,2026, Elapsed time: 0:00:00
+# End time: 12:03:13 on Sep 04,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/noone/OneDrive/Desktop/comp {C:/Users/noone/OneDrive/Desktop/comp/Compression.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/noone/OneDrive/Desktop/Compression\ project/RMII {C:/Users/noone/OneDrive/Desktop/Compression project/RMII/Compression.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:16:08 on Aug 26,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/noone/OneDrive/Desktop/comp" C:/Users/noone/OneDrive/Desktop/comp/Compression.v 
+# Start time: 12:03:13 on Sep 04,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/noone/OneDrive/Desktop/Compression project/RMII" C:/Users/noone/OneDrive/Desktop/Compression project/RMII/Compression.v 
 # -- Compiling module Compression
 # 
 # Top level modules:
 # 	Compression
-# End time: 09:16:08 on Aug 26,2026, Elapsed time: 0:00:00
+# End time: 12:03:13 on Sep 04,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vlog -reportprogress 300 -work work C:/Users/noone/OneDrive/Desktop/comp/tb.v
+vlog -reportprogress 300 -work work {C:/Users/noone/OneDrive/Desktop/Compression project/RMII/Compression_vlg_tst.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:16:34 on Aug 26,2026
-# vlog -reportprogress 300 -work work C:/Users/noone/OneDrive/Desktop/comp/tb.v 
-# -- Compiling module tb_compression
+# Start time: 12:05:35 on Sep 04,2026
+# vlog -reportprogress 300 -work work C:/Users/noone/OneDrive/Desktop/Compression project/RMII/Compression_vlg_tst.v 
+# -- Compiling module Compression_vlg_tst
 # 
 # Top level modules:
-# 	tb_compression
-# End time: 09:16:34 on Aug 26,2026, Elapsed time: 0:00:00
+# 	Compression_vlg_tst
+# End time: 12:05:35 on Sep 04,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim -gui -l msim_transcript work.tb_compression
-# vsim -gui -l msim_transcript work.tb_compression 
-# Start time: 09:17:23 on Aug 26,2026
-# Loading work.tb_compression
+vsim -gui -l msim_transcript work.Compression_vlg_tst
+# vsim -gui -l msim_transcript work.Compression_vlg_tst 
+# Start time: 12:05:48 on Sep 04,2026
+# Loading work.Compression_vlg_tst
 # Loading work.Compression
 # Loading work.rmii_rx
 # Loading work.rmii_tx
-add wave -position end  sim:/tb_compression/clk
-add wave -position end  sim:/tb_compression/rst_n
-add wave -position end  sim:/tb_compression/phya_rx_crs_dv
-add wave -position end  sim:/tb_compression/phya_rxd
-add wave -position end  sim:/tb_compression/phya_tx_en
-add wave -position end  sim:/tb_compression/phya_txd
-add wave -position end  sim:/tb_compression/phyb_rx_crs_dv
-add wave -position end  sim:/tb_compression/phyb_rxd
-add wave -position end  sim:/tb_compression/phyb_tx_en
-add wave -position end  sim:/tb_compression/phyb_txd
+add wave -position end  sim:/Compression_vlg_tst/clk
+add wave -position end  sim:/Compression_vlg_tst/rst_n
+add wave -position end  sim:/Compression_vlg_tst/phya_rx_crs_dv
+add wave -position end  sim:/Compression_vlg_tst/phya_rxd
+add wave -position end  sim:/Compression_vlg_tst/phyb_rx_crs_dv
+add wave -position end  sim:/Compression_vlg_tst/phyb_rxd
+add wave -position end  sim:/Compression_vlg_tst/phya_tx_en
+add wave -position end  sim:/Compression_vlg_tst/phya_txd
+add wave -position end  sim:/Compression_vlg_tst/phyb_tx_en
+add wave -position end  sim:/Compression_vlg_tst/phyb_txd
+add wave -position end  sim:/Compression_vlg_tst/my_byte
+add wave -position end  sim:/Compression_vlg_tst/i
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: noone  Hostname: DESKTOP-PV3BVLH  ProcessID: 7304
-#           Attempting to use alternate WLF file "./wlftmic5ga".
+#           Attempting to use alternate WLF file "./wlft5j5wb3".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftmic5ga
+#           Using alternate file: ./wlft5j5wb3
 run -all
-# ** Note: $finish    : C:/Users/noone/OneDrive/Desktop/comp/tb.v(77)
-#    Time: 500 ns  Iteration: 0  Instance: /tb_compression
-# 1
-# Break in Module tb_compression at C:/Users/noone/OneDrive/Desktop/comp/tb.v line 77
-# End time: 10:30:32 on Aug 26,2026, Elapsed time: 1:13:09
-# Errors: 0, Warnings: 2
+# ** Note: $stop    : C:/Users/noone/OneDrive/Desktop/Compression project/RMII/Compression_vlg_tst.v(72)
+#    Time: 3840 ns  Iteration: 0  Instance: /Compression_vlg_tst
+# Break in Module Compression_vlg_tst at C:/Users/noone/OneDrive/Desktop/Compression project/RMII/Compression_vlg_tst.v line 72

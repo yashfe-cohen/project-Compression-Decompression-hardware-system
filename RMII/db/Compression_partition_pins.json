@@ -28,19 +28,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "phyb_rx_crs_dv",
-					"strict" : false
-				},
-				{
 					"name" : "clk",
 					"strict" : false
 				},
 				{
 					"name" : "rst_n",
-					"strict" : false
-				},
-				{
-					"name" : "phya_rx_crs_dv",
 					"strict" : false
 				},
 				{
@@ -57,6 +49,14 @@
 				},
 				{
 					"name" : "phya_rxd[1]",
+					"strict" : false
+				},
+				{
+					"name" : "phyb_rx_crs_dv",
+					"strict" : false
+				},
+				{
+					"name" : "phya_rx_crs_dv",
 					"strict" : false
 				}
 			]
